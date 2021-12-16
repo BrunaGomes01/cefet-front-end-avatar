@@ -40,11 +40,53 @@
           <img src="imgs/acessorio-bandana.png" alt="Bandana" id="avatar-bandana" class="avatar-acessorio">
         </div>
         <p id="avatar-nome">Meu nome...</p>
+        <button id="baixar">
+          <img src="imgs/icone-tesoura.png" alt="Ícone de tesoura">
+          Baixar avatar
+        </button>
       </section>
       <section id="secao-controles">
         <h2>Controles</h2>
         <div>
-          <!-- coloque os controles aqui -->
+          <div>
+            <label>Nome: <input type="text" id="nome"></label>
+          </div>
+          <div>
+            <label>Cor da pele: <input type="color" id="cor-da-pele"></label>
+          </div>
+          <div>
+            <label>Cabelo:
+              <select id="cabelo">
+                <option value="imgs/cabelo-verde-medio.png">Cabelo verde médio</option>
+                <option value="imgs/cabelo-preto-medio.png">Cabelo preto médio</option>
+                <option value="imgs/cabelo-alaranjado-curto.png">Cabelo alaranjado curto</option>
+                <option value="imgs/cabelo-azul-longo.png">Cabelo azul longo</option>
+                <option value="imgs/cabelo-marrom-curto.png">Cabelo marrom curto</option>
+                <option value="imgs/cabelo-roxo-curto.png">Cabelo roxo curto</option>
+              </select>
+            </label>
+          </div>
+          <div>
+            Acessórios:
+            <div>
+              <label>
+                <input type="checkbox" value="oculos" id="oculos">
+                Óculos de grau
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="checkbox" value="lacinhos" id="lacinhos">
+                Lacinhos vermelhos
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="checkbox" value="bandana" id="bandana">
+                Bandana amarela
+              </label>
+            </div>
+          </div>
         </div>
       </section>
       <section id="secao-instrucoes">
@@ -61,6 +103,8 @@
             Pixel Art Avatar Icon Generator</a>.</p>
       </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.3/html2canvas.min.js" charset="utf-8"></script>
     <script src="avatar.js" charset="utf-8"></script>
+
   </body>
 </html>
